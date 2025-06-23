@@ -1,0 +1,348 @@
+{
+  "description": "RRT算法标准测试场景配置",
+  "version": "1.0",
+  "scenarios": {
+    "simple_2d": {
+      "name": "简单2D环境",
+      "description": "基础的2D平面路径规划测试",
+      "environment": {
+        "bounds": [0, 600, 0, 400],
+        "obstacles": [
+          {
+            "type": "circle",
+            "center": [200, 150],
+            "radius": 40
+          },
+          {
+            "type": "circle", 
+            "center": [400, 280],
+            "radius": 50
+          },
+          {
+            "type": "rectangle",
+            "corner": [150, 300],
+            "width": 100,
+            "height": 60
+          }
+        ]
+      },
+      "start": [50, 200],
+      "goal": [550, 200],
+      "expected_performance": {
+        "rrt_success_rate": 0.85,
+        "rrt_star_success_rate": 0.95,
+        "typical_path_length": 650
+      }
+    },
+    
+    "complex_2d": {
+      "name": "复杂2D环境",
+      "description": "包含多个障碍物的复杂2D环境",
+      "environment": {
+        "bounds": [0, 800, 0, 600],
+        "obstacles": [
+          {
+            "type": "circle",
+            "center": [150, 150],
+            "radius": 45
+          },
+          {
+            "type": "circle",
+            "center": [300, 300],
+            "radius": 60
+          },
+          {
+            "type": "circle",
+            "center": [600, 200],
+            "radius": 50
+          },
+          {
+            "type": "rectangle",
+            "corner": [200, 450],
+            "width": 150,
+            "height": 80
+          },
+          {
+            "type": "rectangle", 
+            "corner": [450, 100],
+            "width": 100,
+            "height": 120
+          },
+          {
+            "type": "rectangle",
+            "corner": [500, 400],
+            "width": 80,
+            "height": 100
+          }
+        ]
+      },
+      "start": [50, 50],
+      "goal": [750, 550],
+      "expected_performance": {
+        "rrt_success_rate": 0.75,
+        "rrt_star_success_rate": 0.90,
+        "typical_path_length": 950
+      }
+    },
+    
+    "narrow_passage": {
+      "name": "狭窄通道",
+      "description": "测试算法通过狭窄通道的能力",
+      "environment": {
+        "bounds": [0, 600, 0, 400],
+        "obstacles": [
+          {
+            "type": "rectangle",
+            "corner": [0, 150],
+            "width": 250,
+            "height": 100
+          },
+          {
+            "type": "rectangle",
+            "corner": [320, 150], 
+            "width": 280,
+            "height": 100
+          }
+        ]
+      },
+      "start": [50, 300],
+      "goal": [550, 100],
+      "expected_performance": {
+        "rrt_success_rate": 0.60,
+        "rrt_star_success_rate": 0.75,
+        "typical_path_length": 580
+      }
+    },
+    
+    "dubins_simple": {
+      "name": "简单Dubins约束",
+      "description": "基础的Dubins路径约束测试",
+      "environment": {
+        "bounds": [0, 600, 0, 400],
+        "obstacles": [
+          {
+            "type": "circle",
+            "center": [300, 200],
+            "radius": 60
+          }
+        ]
+      },
+      "start": {
+        "position": [50, 200],
+        "heading": 0
+      },
+      "goal": {
+        "position": [550, 200],
+        "heading": 1.57
+      },
+      "constraints": {
+        "min_turn_radius": 50,
+        "step_size": 30
+      },
+      "expected_performance": {
+        "success_rate": 0.90,
+        "typical_path_length": 720
+      }
+    },
+    
+    "dubins_complex": {
+      "name": "复杂Dubins约束",
+      "description": "多障碍物环境下的Dubins路径规划",
+      "environment": {
+        "bounds": [0, 800, 0, 600],
+        "obstacles": [
+          {
+            "type": "circle",
+            "center": [200, 200],
+            "radius": 50
+          },
+          {
+            "type": "circle",
+            "center": [400, 400],
+            "radius": 60
+          },
+          {
+            "type": "circle", 
+            "center": [600, 300],
+            "radius": 45
+          },
+          {
+            "type": "rectangle",
+            "corner": [300, 100],
+            "width": 100,
+            "height": 80
+          }
+        ]
+      },
+      "start": {
+        "position": [50, 100],
+        "heading": 0.78
+      },
+      "goal": {
+        "position": [750, 500],
+        "heading": -0.52
+      },
+      "constraints": {
+        "min_turn_radius": 60,
+        "step_size": 35
+      },
+      "expected_performance": {
+        "success_rate": 0.85,
+        "typical_path_length": 950
+      }
+    },
+    
+    "terrain_3d": {
+      "name": "3D地形环境",
+      "description": "复杂地形下的3D路径规划",
+      "environment": {
+        "bounds": [0, 600, 0, 400, 50, 500],
+        "terrain": {
+          "type": "synthetic",
+          "base_height": 50,
+          "peaks": [
+            {
+              "center": [250, 200],
+              "height": 100,
+              "radius": 80
+            },
+            {
+              "center": [450, 300],
+              "height": 80,
+              "radius": 60
+            }
+          ]
+        },
+        "obstacles": [
+          {
+            "type": "cylinder",
+            "center": [200, 150],
+            "radius": 40,
+            "height": 200
+          },
+          {
+            "type": "cylinder",
+            "center": [400, 280],
+            "radius": 50,
+            "height": 150
+          }
+        ]
+      },
+      "start": {
+        "position": [50, 50, 100],
+        "heading": 0,
+        "flight_angle": 0
+      },
+      "goal": {
+        "position": [550, 350, 150],
+        "heading": 0.78,
+        "flight_angle": 0
+      },
+      "constraints": {
+        "min_turn_radius": 50,
+        "max_climb_angle": 15,
+        "max_dive_angle": -20,
+        "min_altitude": 50,
+        "max_altitude": 500,
+        "step_size": 30
+      },
+      "expected_performance": {
+        "success_rate": 0.80,
+        "typical_path_length": 850
+      }
+    },
+    
+    "performance_benchmark": {
+      "name": "性能基准测试",
+      "description": "用于算法性能基准测试的标准场景",
+      "environment": {
+        "bounds": [0, 1000, 0, 800],
+        "obstacles": [
+          {
+            "type": "circle",
+            "center": [200, 200],
+            "radius": 60
+          },
+          {
+            "type": "circle", 
+            "center": [400, 400],
+            "radius": 70
+          },
+          {
+            "type": "circle",
+            "center": [700, 300],
+            "radius": 55
+          },
+          {
+            "type": "rectangle",
+            "corner": [300, 600],
+            "width": 200,
+            "height": 100
+          },
+          {
+            "type": "rectangle",
+            "corner": [600, 100],
+            "width": 150,
+            "height": 120
+          }
+        ]
+      },
+      "start": [50, 100],
+      "goal": [950, 700],
+      "test_parameters": {
+        "max_iterations": [500, 1000, 2000],
+        "step_sizes": [20, 30, 40],
+        "goal_sample_rates": [0.05, 0.1, 0.15],
+        "rewire_radius": [40, 50, 60]
+      },
+      "expected_performance": {
+        "rrt_success_rate": 0.80,
+        "rrt_star_success_rate": 0.92,
+        "typical_path_length": 1200,
+        "planning_time_rrt": 0.5,
+        "planning_time_rrt_star": 1.2
+      }
+    }
+  },
+  
+  "test_protocols": {
+    "standard_test": {
+      "description": "标准测试协议",
+      "num_trials": 20,
+      "timeout": 30.0,
+      "metrics": [
+        "success_rate",
+        "average_path_length", 
+        "planning_time",
+        "nodes_generated",
+        "iterations_to_goal"
+      ]
+    },
+    
+    "performance_test": {
+      "description": "性能评估测试协议",
+      "num_trials": 50,
+      "timeout": 60.0,
+      "metrics": [
+        "success_rate",
+        "path_length_statistics",
+        "planning_time_statistics", 
+        "convergence_analysis",
+        "memory_usage"
+      ]
+    }
+  },
+  
+  "validation_criteria": {
+    "path_quality": {
+      "smoothness_threshold": 0.1,
+      "length_optimality_ratio": 1.5,
+      "clearance_minimum": 10.0
+    },
+    "performance": {
+      "success_rate_minimum": 0.7,
+      "planning_time_maximum": 10.0,
+      "memory_usage_maximum": "100MB"
+    }
+  }
+} 

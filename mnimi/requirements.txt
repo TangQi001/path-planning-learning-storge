@@ -1,0 +1,26 @@
+# B-样条曲线 Manim 演示项目依赖
+
+# 核心依赖
+manim>=0.18.0          # Manim Community 版本，用于数学动画制作
+scipy>=1.9.0           # 科学计算库，提供 B-spline 实现
+numpy>=1.21.0          # 数值计算库
+
+# 可选依赖（提升性能和功能）
+matplotlib>=3.5.0      # 如果需要额外的绘图功能
+pillow>=8.0.0          # 图像处理支持
+
+# 开发依赖（可选）
+pytest>=6.0.0          # 单元测试框架
+black>=22.0.0          # 代码格式化工具
+flake8>=4.0.0          # 代码风格检查
+
+# 注意事项：
+# 1. Manim 安装可能需要额外的系统依赖（如 FFmpeg、LaTeX 等）
+# 2. 在某些系统上可能需要单独安装 cairo 和 pango 开发库
+# 3. 建议使用虚拟环境来管理依赖
+
+# 安装命令：
+# pip install -r requirements.txt
+
+# 或者最小安装：
+# pip install manim scipy numpy 

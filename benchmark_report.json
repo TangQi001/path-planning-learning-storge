@@ -1,0 +1,335 @@
+{
+  "timestamp": "2025-06-18 22:53:11",
+  "total_scenarios": 3,
+  "total_runs": 30,
+  "algorithm_performance": {
+    "RRT": {
+      "total_runs": 15,
+      "successful_runs": 15,
+      "path_lengths": [
+        30.141776432228905,
+        26.2801621665588,
+        28.378883934059985,
+        28.199775049624176,
+        27.703525990553786,
+        24.505687137994165,
+        24.037257094303005,
+        25.35593312019442,
+        23.579733138502768,
+        24.809755684059734,
+        26.954898873633564,
+        28.418564199457556,
+        29.600690083624833,
+        28.939236905368915,
+        26.33191608149265
+      ],
+      "computation_times": [
+        0.011545658111572266,
+        0.0009915828704833984,
+        0.001470327377319336,
+        0.0010135173797607422,
+        0.000997781753540039,
+        0.0019979476928710938,
+        0.0009996891021728516,
+        0.0009999275207519531,
+        0.0009999275207519531,
+        0.0012202262878417969,
+        0.002003192901611328,
+        0.001995086669921875,
+        0.003569364547729492,
+        0.0030078887939453125,
+        0.0019919872283935547
+      ],
+      "success_rate": 1.0,
+      "avg_length": 26.882519726110484,
+      "std_length": 2.0199067352625106,
+      "avg_time": 0.002320273717244466,
+      "std_time": 0.002581263438190344
+    },
+    "RRT*": {
+      "total_runs": 15,
+      "successful_runs": 15,
+      "path_lengths": [
+        24.212122030224098,
+        24.476170580639533,
+        23.528550306518834,
+        24.27385349804178,
+        24.36769735005911,
+        19.676910464706904,
+        22.193355361221393,
+        20.504311894428973,
+        19.577043522254932,
+        20.175464115103825,
+        24.961601361762956,
+        24.810660317597332,
+        24.58171769877274,
+        24.63841560725302,
+        23.655685104883226
+      ],
+      "computation_times": [
+        0.005511283874511719,
+        0.007262468338012695,
+        0.0020046234130859375,
+        0.0020003318786621094,
+        0.004010438919067383,
+        0.0016484260559082031,
+        0.0010023117065429688,
+        0.0009999275207519531,
+        0.001999378204345703,
+        0.0010001659393310547,
+        0.01620769500732422,
+        0.010797739028930664,
+        0.004237651824951172,
+        0.006000995635986328,
+        0.010034561157226562
+      ],
+      "success_rate": 1.0,
+      "avg_length": 23.04223728089791,
+      "std_length": 1.9622002408110502,
+      "avg_time": 0.004981199900309245,
+      "std_time": 0.004310437833709113
+    }
+  },
+  "detailed_results": [
+    {
+      "scenario": "easy_open_space",
+      "algorithm": "RRT",
+      "success": true,
+      "path_length": 30.141776432228905,
+      "computation_time": 0.011545658111572266,
+      "nodes_generated": 93
+    },
+    {
+      "scenario": "easy_open_space",
+      "algorithm": "RRT",
+      "success": true,
+      "path_length": 26.2801621665588,
+      "computation_time": 0.0009915828704833984,
+      "nodes_generated": 76
+    },
+    {
+      "scenario": "easy_open_space",
+      "algorithm": "RRT",
+      "success": true,
+      "path_length": 28.378883934059985,
+      "computation_time": 0.001470327377319336,
+      "nodes_generated": 83
+    },
+    {
+      "scenario": "easy_open_space",
+      "algorithm": "RRT",
+      "success": true,
+      "path_length": 28.199775049624176,
+      "computation_time": 0.0010135173797607422,
+      "nodes_generated": 73
+    },
+    {
+      "scenario": "easy_open_space",
+      "algorithm": "RRT",
+      "success": true,
+      "path_length": 27.703525990553786,
+      "computation_time": 0.000997781753540039,
+      "nodes_generated": 92
+    },
+    {
+      "scenario": "easy_simple_detour",
+      "algorithm": "RRT",
+      "success": true,
+      "path_length": 24.505687137994165,
+      "computation_time": 0.0019979476928710938,
+      "nodes_generated": 95
+    },
+    {
+      "scenario": "easy_simple_detour",
+      "algorithm": "RRT",
+      "success": true,
+      "path_length": 24.037257094303005,
+      "computation_time": 0.0009996891021728516,
+      "nodes_generated": 77
+    },
+    {
+      "scenario": "easy_simple_detour",
+      "algorithm": "RRT",
+      "success": true,
+      "path_length": 25.35593312019442,
+      "computation_time": 0.0009999275207519531,
+      "nodes_generated": 77
+    },
+    {
+      "scenario": "easy_simple_detour",
+      "algorithm": "RRT",
+      "success": true,
+      "path_length": 23.579733138502768,
+      "computation_time": 0.0009999275207519531,
+      "nodes_generated": 48
+    },
+    {
+      "scenario": "easy_simple_detour",
+      "algorithm": "RRT",
+      "success": true,
+      "path_length": 24.809755684059734,
+      "computation_time": 0.0012202262878417969,
+      "nodes_generated": 68
+    },
+    {
+      "scenario": "medium_multi_obstacles",
+      "algorithm": "RRT",
+      "success": true,
+      "path_length": 26.954898873633564,
+      "computation_time": 0.002003192901611328,
+      "nodes_generated": 79
+    },
+    {
+      "scenario": "medium_multi_obstacles",
+      "algorithm": "RRT",
+      "success": true,
+      "path_length": 28.418564199457556,
+      "computation_time": 0.001995086669921875,
+      "nodes_generated": 85
+    },
+    {
+      "scenario": "medium_multi_obstacles",
+      "algorithm": "RRT",
+      "success": true,
+      "path_length": 29.600690083624833,
+      "computation_time": 0.003569364547729492,
+      "nodes_generated": 133
+    },
+    {
+      "scenario": "medium_multi_obstacles",
+      "algorithm": "RRT",
+      "success": true,
+      "path_length": 28.939236905368915,
+      "computation_time": 0.0030078887939453125,
+      "nodes_generated": 118
+    },
+    {
+      "scenario": "medium_multi_obstacles",
+      "algorithm": "RRT",
+      "success": true,
+      "path_length": 26.33191608149265,
+      "computation_time": 0.0019919872283935547,
+      "nodes_generated": 91
+    },
+    {
+      "scenario": "easy_open_space",
+      "algorithm": "RRT*",
+      "success": true,
+      "path_length": 24.212122030224098,
+      "computation_time": 0.005511283874511719,
+      "nodes_generated": 111
+    },
+    {
+      "scenario": "easy_open_space",
+      "algorithm": "RRT*",
+      "success": true,
+      "path_length": 24.476170580639533,
+      "computation_time": 0.007262468338012695,
+      "nodes_generated": 138
+    },
+    {
+      "scenario": "easy_open_space",
+      "algorithm": "RRT*",
+      "success": true,
+      "path_length": 23.528550306518834,
+      "computation_time": 0.0020046234130859375,
+      "nodes_generated": 68
+    },
+    {
+      "scenario": "easy_open_space",
+      "algorithm": "RRT*",
+      "success": true,
+      "path_length": 24.27385349804178,
+      "computation_time": 0.0020003318786621094,
+      "nodes_generated": 68
+    },
+    {
+      "scenario": "easy_open_space",
+      "algorithm": "RRT*",
+      "success": true,
+      "path_length": 24.36769735005911,
+      "computation_time": 0.004010438919067383,
+      "nodes_generated": 95
+    },
+    {
+      "scenario": "easy_simple_detour",
+      "algorithm": "RRT*",
+      "success": true,
+      "path_length": 19.676910464706904,
+      "computation_time": 0.0016484260559082031,
+      "nodes_generated": 55
+    },
+    {
+      "scenario": "easy_simple_detour",
+      "algorithm": "RRT*",
+      "success": true,
+      "path_length": 22.193355361221393,
+      "computation_time": 0.0010023117065429688,
+      "nodes_generated": 48
+    },
+    {
+      "scenario": "easy_simple_detour",
+      "algorithm": "RRT*",
+      "success": true,
+      "path_length": 20.504311894428973,
+      "computation_time": 0.0009999275207519531,
+      "nodes_generated": 54
+    },
+    {
+      "scenario": "easy_simple_detour",
+      "algorithm": "RRT*",
+      "success": true,
+      "path_length": 19.577043522254932,
+      "computation_time": 0.001999378204345703,
+      "nodes_generated": 81
+    },
+    {
+      "scenario": "easy_simple_detour",
+      "algorithm": "RRT*",
+      "success": true,
+      "path_length": 20.175464115103825,
+      "computation_time": 0.0010001659393310547,
+      "nodes_generated": 67
+    },
+    {
+      "scenario": "medium_multi_obstacles",
+      "algorithm": "RRT*",
+      "success": true,
+      "path_length": 24.961601361762956,
+      "computation_time": 0.01620769500732422,
+      "nodes_generated": 165
+    },
+    {
+      "scenario": "medium_multi_obstacles",
+      "algorithm": "RRT*",
+      "success": true,
+      "path_length": 24.810660317597332,
+      "computation_time": 0.010797739028930664,
+      "nodes_generated": 132
+    },
+    {
+      "scenario": "medium_multi_obstacles",
+      "algorithm": "RRT*",
+      "success": true,
+      "path_length": 24.58171769877274,
+      "computation_time": 0.004237651824951172,
+      "nodes_generated": 78
+    },
+    {
+      "scenario": "medium_multi_obstacles",
+      "algorithm": "RRT*",
+      "success": true,
+      "path_length": 24.63841560725302,
+      "computation_time": 0.006000995635986328,
+      "nodes_generated": 87
+    },
+    {
+      "scenario": "medium_multi_obstacles",
+      "algorithm": "RRT*",
+      "success": true,
+      "path_length": 23.655685104883226,
+      "computation_time": 0.010034561157226562,
+      "nodes_generated": 134
+    }
+  ]
+}
