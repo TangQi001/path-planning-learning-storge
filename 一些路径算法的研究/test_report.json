@@ -1,0 +1,262 @@
+{
+  "test_timestamp": "2025-07-20 09:56:15",
+  "total_test_cases": 4,
+  "test_results": [
+    {
+      "case": "标准配置",
+      "optimal_type": "LSR",
+      "optimal_length": 13.885605805424142,
+      "all_paths": {
+        "RSR": {
+          "segments": [
+            6.228635574005652,
+            5.371951635697128,
+            1.6253460599688312
+          ],
+          "length": 26.45186653934322,
+          "feasible": true
+        },
+        "LSL": {
+          "segments": [
+            6.055389907553287,
+            7.559241736029544,
+            4.940184380010989
+          ],
+          "length": 37.10963204718764,
+          "feasible": true
+        },
+        "RSL": {
+          "segments": [
+            0.23507196559216847,
+            7.093215667028937,
+            4.947460945976858
+          ],
+          "length": 24.551497157195925,
+          "feasible": true
+        },
+        "LSR": {
+          "segments": [
+            0.05511505862351934,
+            5.261776458670136,
+            1.6259113854184157
+          ],
+          "length": 13.885605805424142,
+          "feasible": true
+        },
+        "RLR": {
+          "segments": [
+            0,
+            0,
+            0
+          ],
+          "length": Infinity,
+          "feasible": false
+        },
+        "LRL": {
+          "segments": [
+            0,
+            0,
+            0
+          ],
+          "length": Infinity,
+          "feasible": false
+        }
+      }
+    },
+    {
+      "case": "紧密空间",
+      "optimal_type": "LSL",
+      "optimal_length": 7.712388980384688,
+      "all_paths": {
+        "RSR": {
+          "segments": [
+            5.176036589385496,
+            4.47213595499958,
+            4.2487413713838835
+          ],
+          "length": 20.845370873653437,
+          "feasible": true
+        },
+        "LSL": {
+          "segments": [
+            0.0,
+            1.9999999999999991,
+            3.141592653589793
+          ],
+          "length": 7.712388980384688,
+          "feasible": true
+        },
+        "RSL": {
+          "segments": [
+            0.0,
+            1.9999999999999996,
+            3.141592653589793
+          ],
+          "length": 7.71238898038469,
+          "feasible": true
+        },
+        "LSR": {
+          "segments": [
+            1.5707963267948966,
+            1.9999999999999993,
+            4.71238898038469
+          ],
+          "length": 12.42477796076938,
+          "feasible": true
+        },
+        "RLR": {
+          "segments": [
+            0,
+            0,
+            0
+          ],
+          "length": Infinity,
+          "feasible": false
+        },
+        "LRL": {
+          "segments": [
+            0,
+            0,
+            0
+          ],
+          "length": Infinity,
+          "feasible": false
+        }
+      }
+    },
+    {
+      "case": "长距离",
+      "optimal_type": "RSR",
+      "optimal_length": 21.743469793398305,
+      "all_paths": {
+        "RSR": {
+          "segments": [
+            0.15741403493639566,
+            5.677026937671205,
+            1.4133822918585004
+          ],
+          "length": 21.743469793398305,
+          "feasible": true
+        },
+        "LSL": {
+          "segments": [
+            5.920111821387463,
+            8.137309727016659,
+            5.075462466176813
+          ],
+          "length": 57.3986520437428,
+          "feasible": true
+        },
+        "RSL": {
+          "segments": [
+            0.3806682797409673,
+            7.392968209857449,
+            5.093057260125657
+          ],
+          "length": 38.60008124917222,
+          "feasible": true
+        },
+        "LSR": {
+          "segments": [
+            6.1299019361353295,
+            5.982346152846856,
+            1.4175129557506398
+          ],
+          "length": 40.589283134198475,
+          "feasible": true
+        },
+        "RLR": {
+          "segments": [
+            0,
+            0,
+            0
+          ],
+          "length": Infinity,
+          "feasible": false
+        },
+        "LRL": {
+          "segments": [
+            0,
+            0,
+            0
+          ],
+          "length": Infinity,
+          "feasible": false
+        }
+      }
+    },
+    {
+      "case": "U型转弯",
+      "optimal_type": "LSL",
+      "optimal_length": 7.853981633974483,
+      "all_paths": {
+        "RSR": {
+          "segments": [
+            4.71238898038469,
+            4.0,
+            4.71238898038469
+          ],
+          "length": 33.56194490192345,
+          "feasible": true
+        },
+        "LSL": {
+          "segments": [
+            3.141592653589793,
+            0.0,
+            0.0
+          ],
+          "length": 7.853981633974483,
+          "feasible": true
+        },
+        "RSL": {
+          "segments": [
+            0.0,
+            0.0,
+            3.141592653589793
+          ],
+          "length": 7.853981633974483,
+          "feasible": true
+        },
+        "LSR": {
+          "segments": [
+            3.141592653589793,
+            0.0,
+            0.0
+          ],
+          "length": 7.853981633974483,
+          "feasible": true
+        },
+        "RLR": {
+          "segments": [
+            0.0,
+            3.141592653589793,
+            0.0
+          ],
+          "length": 7.853981633974483,
+          "feasible": true
+        },
+        "LRL": {
+          "segments": [
+            3.141592653589793,
+            3.141592653589793,
+            3.141592653589793
+          ],
+          "length": 23.561944901923447,
+          "feasible": true
+        }
+      }
+    }
+  ],
+  "summary": {
+    "most_common_optimal": "LSL",
+    "average_path_length": 12.798861553295405,
+    "feasibility_statistics": {
+      "RSR": 100.0,
+      "LSL": 100.0,
+      "RSL": 100.0,
+      "LSR": 100.0,
+      "RLR": 25.0,
+      "LRL": 25.0
+    }
+  }
+}
